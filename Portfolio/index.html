@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bipeng Wang | AI for Scientific Discovery</title>
+    <meta
+      name="description"
+      content="Bipeng Wang is an AI researcher and machine learning engineer building scientific AI systems, multimodal models, and ML-accelerated materials simulations."
+    >
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Bipeng Wang home">
+        <span class="brand-mark">BW</span>
+        <span>Bipeng Wang</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#publications">Publications</a>
+        <a href="#profile">Profile</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI Researcher + Machine Learning Engineer</p>
+          <h1>Building AI systems for scientific discovery, simulation, and decision-making.</h1>
+          <p class="hero-text">
+            I bridge machine learning, computational materials science, and full-stack AI products:
+            from PyTorch models and quantum dynamics pipelines to RAG-powered scientific assistants.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">View work</a>
+            <a class="button secondary" href="assets/resumes/bipeng-wang-industry-ai-ml.pdf">Industry resume</a>
+          </div>
+          <div class="social-row" aria-label="Profile links">
+            <a href="mailto:bipeng95@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/bipeng-wang-6418b4153/">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=qUaCtxUAAAAJ&hl=en&oi=ao">Google Scholar</a>
+            <a href="https://github.com/BipengWang">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Scientific AI system visualization">
+          <canvas id="scienceCanvas" width="720" height="720"></canvas>
+          <div class="visual-caption">
+            <span>100x+ simulation acceleration</span>
+            <span>7 first-author papers</span>
+            <span>LLM + RAG scientific workflows</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Highlights">
+        <div>
+          <strong>Ph.D.</strong>
+          <span>Chemical Engineering, USC</span>
+        </div>
+        <div>
+          <strong>M.S.</strong>
+          <span>Computer Science, USC</span>
+        </div>
+        <div>
+          <strong>7</strong>
+          <span>First-author publications</span>
+        </div>
+        <div>
+          <strong>&lt;5 meV</strong>
+          <span>Surrogate prediction error</span>
+        </div>
+      </section>
+
+      <section class="section intro" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Three connected lines of work, tuned for different audiences.</h2>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Project focus filter">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="industry" type="button">Industry AI</button>
+          <button class="filter" data-filter="engineering" type="button">Engineering</button>
+          <button class="filter" data-filter="materials" type="button">Materials</button>
+        </div>
+      </section>
+
+      <section class="project-grid" aria-label="Project case studies">
+        <article class="project-card" data-tags="industry engineering materials">
+          <div class="project-media assistant-media">
+            <span>RAG</span>
+            <span>FastAPI</span>
+            <span>Spectroscopy</span>
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">AI Agent Systems</p>
+            <h3>Scientific assistant for spectroscopy and literature analysis</h3>
+            <p>
+              Built an LLM-powered assistant combining RAG, vector databases, spectrum upload,
+              peak detection, visualization, semantic retrieval, and AI-assisted reporting.
+            </p>
+            <ul class="compact-list">
+              <li>Designed FastAPI backend services and interactive analysis workflows.</li>
+              <li>Used Pinecone and sentence-transformer embeddings for scientific search.</li>
+              <li>Connected data processing, retrieval, reasoning, and report generation.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="industry">
+          <div class="project-media multimodal-media">
+            <span>Audio</span>
+            <span>Video</span>
+            <span>Uncertainty</span>
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Multimodal Learning</p>
+            <h3>Uncertainty-aware audiovisual emotion recognition</h3>
+            <p>
+              Developed a multimodal transformer that fuses HuBERT audio representations
+              with VideoMAE visual features for robust behavior understanding.
+            </p>
+            <ul class="compact-list">
+              <li>Improved F1 score by about 6% over baseline models.</li>
+              <li>Implemented confidence calibration and uncertainty estimation.</li>
+              <li>Optimized cross-modal fusion under noisy real-world conditions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="industry engineering materials">
+          <div class="project-media simulation-media">
+            <span>PyTorch</span>
+            <span>NAMD</span>
+            <span>HPC</span>
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Scientific Machine Learning</p>
+            <h3>ML-accelerated quantum dynamics simulation</h3>
+            <p>
+              Built neural surrogate models for atomistic simulations, reducing expensive
+              ab initio calculations by over two orders of magnitude while preserving accuracy.
+            </p>
+            <ul class="compact-list">
+              <li>Developed ANN, inverse FFT reconstruction, and Bi-LSTM models.</li>
+              <li>Achieved meV-level Hamiltonian prediction accuracy.</li>
+              <li>Enabled longer excited-state simulations on HPC workflows.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="engineering materials">
+          <div class="project-media materials-media">
+            <span>DFT</span>
+            <span>MD</span>
+            <span>Defects</span>
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Materials Modeling</p>
+            <h3>Defect physics in metal halide perovskites</h3>
+            <p>
+              Studied charge-carrier dynamics, defect-induced electronic structure fluctuations,
+              and sub-bandgap energy up-conversion with first-principles simulations.
+            </p>
+            <ul class="compact-list">
+              <li>Revealed electron-volt-scale defect level fluctuations over 100 ps.</li>
+              <li>Combined DFT, molecular dynamics, and excited-state simulations.</li>
+              <li>Published computational insights in ACS and Nature Portfolio venues.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="engineering materials">
+          <div class="project-media anomaly-media">
+            <span>Rare events</span>
+            <span>UQ</span>
+            <span>Trajectories</span>
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Anomaly Discovery</p>
+            <h3>Outlier detection for quantum molecular dynamics</h3>
+            <p>
+              Designed workflows to identify rare events from large-scale quantum molecular
+              dynamics trajectories and improve simulation reliability.
+            </p>
+            <ul class="compact-list">
+              <li>Applied anomaly detection indices to scientific trajectory data.</li>
+              <li>Connected uncertainty-aware analysis with physical interpretation.</li>
+              <li>Supported efficient discovery of unusual dynamics patterns.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card resume-card" data-tags="industry engineering materials">
+          <div class="resume-preview">
+            <img src="assets/images/resume-preview.png" alt="Preview of Bipeng Wang resume">
+          </div>
+          <div class="project-body">
+            <p class="project-kicker">Resume Tracks</p>
+            <h3>Download the version matched to your review context</h3>
+            <div class="resume-links">
+              <a href="assets/resumes/bipeng-wang-industry-ai-ml.pdf">Industry AI/ML</a>
+              <a href="assets/resumes/bipeng-wang-postdoc-engineering.pdf">Engineering Postdoc</a>
+              <a href="assets/resumes/bipeng-wang-postdoc-materials.pdf">Materials Postdoc</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section split" id="publications">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>First-author work on machine learning models and scalable computational frameworks.</h2>
+        </div>
+        <div class="publication-list">
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.1c01645">
+            <span>J. Phys. Chem. Lett. 2021</span>
+            Interpolating Nonadiabatic Molecular Dynamics Hamiltonian with Artificial Neural Networks
+          </a>
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.3c01723">
+            <span>J. Phys. Chem. Lett. 2023</span>
+            Interpolating Nonadiabatic Molecular Dynamics Hamiltonian with Bidirectional LSTM Networks
+          </a>
+          <a href="https://pubs.acs.org/doi/full/10.1021/acs.jpclett.4c02586">
+            <span>J. Phys. Chem. Lett. 2024</span>
+            Identifying Rare Events in Quantum Molecular Dynamics with Outlier Detection Indices
+          </a>
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.1c03884">
+            <span>J. Phys. Chem. Lett. 2022</span>
+            Interpolating Nonadiabatic Molecular Dynamics Hamiltonian with Inverse FFT
+          </a>
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.3c02187">
+            <span>J. Phys. Chem. Lett. 2023</span>
+            Efficient Modeling of Quantum Dynamics Using Short Nonequilibrium Molecular Dynamics
+          </a>
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.2c01452">
+            <span>J. Phys. Chem. Lett. 2022</span>
+            Electron-Volt Fluctuation of Defect Levels in Metal Halide Perovskites
+          </a>
+          <a href="https://www.nature.com/articles/s41524-024-01467-4">
+            <span>npj Computational Materials 2025</span>
+            Sub-Bandgap Charge Harvesting and Energy Up-Conversion in Metal Halide Perovskites
+          </a>
+        </div>
+      </section>
+
+      <section class="section profile" id="profile">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2>Research depth with implementation range.</h2>
+        </div>
+        <div class="profile-grid">
+          <div>
+            <h3>Skills</h3>
+            <div class="tag-cloud">
+              <span>PyTorch</span>
+              <span>Transformers</span>
+              <span>LLMs</span>
+              <span>RAG</span>
+              <span>Vector Databases</span>
+              <span>FastAPI</span>
+              <span>Python</span>
+              <span>SQL</span>
+              <span>NumPy</span>
+              <span>SciPy</span>
+              <span>Pandas</span>
+              <span>Scikit-learn</span>
+              <span>DFT</span>
+              <span>MD</span>
+              <span>NAMD</span>
+              <span>HPC</span>
+              <span>VASP</span>
+              <span>CP2K</span>
+              <span>LAMMPS</span>
+            </div>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <ol class="timeline">
+              <li>
+                <span>2019-2025</span>
+                Ph.D. Chemical Engineering, University of Southern California
+              </li>
+              <li>
+                <span>2021-2023</span>
+                M.S. Computer Science, University of Southern California
+              </li>
+              <li>
+                <span>2017-2019</span>
+                M.S. Chemical Engineering, University of Southern California
+              </li>
+              <li>
+                <span>2013-2017</span>
+                B.S. Applied Chemistry, Shenyang University of Chemical Technology
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Interested in scientific AI, ML engineering, or materials research roles.</h2>
+        </div>
+        <a class="button primary" href="mailto:bipeng95@gmail.com">bipeng95@gmail.com</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Bipeng Wang</span>
+      <span>Los Angeles, CA</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
